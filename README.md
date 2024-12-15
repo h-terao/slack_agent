@@ -1,2 +1,6 @@
-# wf-slack-agent
-My slack agent
+# Slack Agent
+
+## Future work
+
+- `manifest.yaml`の検証
+- ログの追加

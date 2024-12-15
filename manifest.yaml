@@ -1,0 +1,21 @@
+display_information:
+  name: slack_agent
+features:
+  bot_user:
+    display_name: slack_agent
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - channels:history
+      - chat:write
+      - commands
+      - files:read
+      - files:write
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+  # ソケットモードで通信するためにsocket_modeを有効化
+  socket_mode_enabled: true
